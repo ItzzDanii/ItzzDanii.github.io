@@ -1,0 +1,38 @@
+li {
+     background-color: rgb(181, 255, 108); 
+     color: blue;
+}
+
+a{
+    color: red;
+}
+
+#storia p{
+    color: fuchsia;
+}
+
+#storia .blu{
+    color:blue;
+}
+
+#monumenti p {
+    color: blue;
+}
+
+article .evidenzia{
+    background-color: rgb(129, 194, 255);
+}
+
+article a{
+    color:rgb(98, 0, 255);
+    background-color:beige;
+}
+
+figcaption{
+    background-color: lightgray;
+}
+
+nav ul a{
+    color:red;
+    background-color: transparent;
+}
