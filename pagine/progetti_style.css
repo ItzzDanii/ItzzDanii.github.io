@@ -1,22 +1,139 @@
 body { 
-    font-family: arial, sans-serif;
-    font-size: 5mm;
+    background-color: white;
+    max-width: 900px;
+    font-family: "nunito", sans-serif;
+    margin: 40px auto; 
+}
+
+#nav-principale {
+    margin-top: -40px;
+    margin-bottom: 60px;
+    background-color: #000000;
+    padding: 1rem 1.5rem;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+#nav-principale ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    display: block;
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 0.4rem 0;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+    color: #7eb8f7;
+    outline-color: #7eb8f7;
+    scale: 1.1;
+    transition: 0.2s;
+}
+
+.title {
+    color: #000000;
     text-align: center;
 }
 
-button{
+.progetti-container{
+    background-color: #ffffff;
+    background-image: radial-gradient(#000000 0.3px, transparent 0.3px);
+    background-size: 5px 5px;
+
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 30px;  
+}
+
+.cards{
+    display: flex;  
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 30px;
+}
+
+.card{
+    display: block;
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    max-width: 40%;
+    color: black;
     border: 2px solid black;
-    width: max-content;
-    height: 50px;
-    margin:0 20px 0 0;
-    border-radius: 10px;
+    box-shadow: 4px 4px 0 black;
 }
 
-a{
+.card .date{
+    background-color: lightgray;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.6mm;
+    margin-left: -15px;
+    padding: 5px 0;
+    margin-right: -15px;
+    margin-top: -15px;
+}
+
+.card button{
+    background-color: lightgray;
+    border: 3px solid black;
+    padding: 10px;
+    width:max-content;
+}
+
+.card p{
+    font-size: 3.8mm;
+}
+
+.card a{
     text-decoration: none;
-    color: blue;
+    font-weight: bold;
+    color: black;
 }
 
-button:hover{
-    scale:1.1;
+.card button:hover{
+    box-shadow: 4px 4px 0 black;
+    scale: 1.05;
+}
+
+.footer-principale {
+    border-top: 2px solid #e0e0e0;
+    margin-top: 10rem;
+    padding: 2rem 0 2rem 2rem;
+    color: #ffffff;
+    font-size: 0.9rem;
+    background-color: black;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    text-align: center;
+    margin-bottom: -40px;
+}
+
+.footer-principale ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-principale a:hover {
+    color: #4ba5ff;
+    scale: 1.1;
+    transition: 0.2s;
 }
