@@ -34,7 +34,7 @@ blockquote>p {
 }
 
 a {
-    color: #1a5fa8;
+    color: #218cff;
     text-decoration: underline;
 }
 
@@ -192,6 +192,19 @@ a:focus-visible {
     color: #01b8f0;
     margin-right: 0.6rem;
     font-weight: bold;
+}
+
+.sezione#contatti li{
+    margin-bottom: 10px;
+}
+
+.sezione#contatti span{
+     color: #2a6dac; 
+     margin-right: 15px;
+}
+
+.sezione#contatti strong{
+    padding-right: 10px;
 }
 
 .risposta-faq{
