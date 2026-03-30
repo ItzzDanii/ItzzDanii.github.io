@@ -6,7 +6,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.7;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    background: linear-gradient(135deg, #021024 0%, #041b49 100%);
     background-attachment: fixed;
     color: #e8e8e8;
     max-width: 900px;
@@ -31,6 +31,10 @@ p { margin-bottom: 1rem; }
 
 blockquote>p {
     color: rgba(122, 195, 255, 0.795);
+}
+
+.footer-principale a {
+    font-size: 16px;
 }
 
 a {
@@ -83,8 +87,8 @@ a:focus-visible {
 }
 
 .hero {
-    background-color: #000000;
-    color: #ffffff;
+    background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFyaXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60");
+    background-size: cover;
     padding: 4rem 1.5rem;
     margin-bottom: 3rem;
     width: 100vw;
@@ -100,21 +104,24 @@ a:focus-visible {
 }
 
 .hero h1 {
-    color: #ffffff;
+    color: #082153;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 .hero-intro {
     font-size: 1.15rem;
-    color: #b0c4de;
-    max-width: 60ch;
+    color: #052669;
+    max-width: 70ch;
     margin-bottom: 2rem;
+    font-weight: bold;
 }
 
 .btn {
     display: inline-block;
-    background-color: #2586e0;
+    background-color: #65b1c9;
+    border: 2px black solid;
+    box-shadow: 2px 2px black;
     color: #ffffff;
     text-decoration: none;
     padding: 0.75rem 1.75rem;
@@ -123,7 +130,7 @@ a:focus-visible {
 }
 
 .btn:hover {
-    background-color: #2573c7;
+    background-color: #87dddd;
     color: #ffffff;
     scale: 1.1;
     transition: 0.2s;
@@ -150,6 +157,10 @@ a:focus-visible {
     background-color: #62b6cb;
     border: 3px solid #e0e0e0;
     border-radius: 8px;
+    box-shadow:
+    0 0 5px #00c0fe,
+    0 0 10px #00c0fe,
+    0 0 20px #00c0fe;
     padding: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -256,11 +267,12 @@ blockquote footer {
 }
 
 .footer-link {
-    color: #1d84b5;
+    color: #5ebdd8;
     text-decoration: none;
 }
 
 .footer-link:hover {
+    color: #075171;
     text-decoration: underline;
 }
 
