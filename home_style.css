@@ -218,15 +218,35 @@ a:focus-visible {
     padding-right: 10px;
 }
 
-.risposta-faq{
-    max-width: 500px; 
-    margin-bottom: 50px;
-    color: rgba(122, 195, 255, 0.795);
+.domanda-faq {
+    display: block;
+    font-weight: bold;
+    background-color: #041b49;
+    box-shadow: 5px 5px #000638;
+    text-align: center;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
-ul > li{
-    font-weight: bold;
+.domanda-faq:hover {
+    background-color: #062a7c;
+    color: #ffffff;
+    cursor: pointer;
+    scale: 1.01;
+    transition: 0.2s;
 }
+
+.risposta-faq{
+    text-align: center;
+    display: none;
+    margin-bottom: 50px;
+    color: rgb(122, 195, 255);
+}
+
+.risposta-faq.visible{
+    display: block;
+}
+
 blockquote {
     border-left: 4px solid #2e75b6;
     padding-left: 1.25rem;
