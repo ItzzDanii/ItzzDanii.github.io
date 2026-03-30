@@ -3,6 +3,7 @@ body {
     max-width: 900px;
     font-family: "nunito", sans-serif;
     margin: 40px auto; 
+    overflow-x: hidden;
 }
 
 #nav-principale {
@@ -42,6 +43,20 @@ body {
 .title {
     color: #000000;
     text-align: center;
+}
+
+.meme-img {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    display: block;
+    width: 400px;
+    height: 400px;
+}
+
+.meme-img:hover {
+    scale: 1.05;
+    transition: 0.2s;
 }
 
 .progetti-container{
