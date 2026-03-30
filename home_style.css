@@ -221,7 +221,13 @@ a:focus-visible {
     cursor: pointer;
 }
 
-.sezione#contatti .btn-github>a{
+.sezione#contatti .btn-github img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.sezione#contatti .btn-github a{
     text-decoration: none;
     color: white;
     font-weight: bold;
