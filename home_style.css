@@ -88,6 +88,9 @@ a:focus-visible {
 }
 
 .hero {
+    color: black;
+    background: url("Hero_bg.jpg");
+    background-size: cover;
     padding: 4rem 1.5rem;
     margin-bottom: 3rem;
     width: 100vw;
@@ -103,14 +106,12 @@ a:focus-visible {
 }
 
 .hero h1 {
-    color: #082153;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 .hero-intro {
     font-size: 1.15rem;
-    color: #052669;
     max-width: 70ch;
     margin-bottom: 2rem;
     font-weight: bold;
