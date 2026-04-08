@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html lang="it">
     <head>
-
+        <link rel="stylesheet" href="style_input.css">
     </head>
 
     <body>
-        <!-- Checkboxes -->
-        <input type="checkbox" id="calcio" class="sport" value="calcio">
-        <label>Calcio</label>
+        <nav id="nav-principale">
+            <ul>
+                <li><a href="/index.html#about" class="nav-link">Chi sono</a></li>
+                <li><a href="/index.html#competenze" class="nav-link">Competenze</a></li>
+                <li><a href="/pagine/progetti_page.html" class="nav-link">Progetti</a></li>
+                <li><a href="/index.html#contatti" class="nav-link">Contatti</a></li>
+                <li><a href="/index.html#faq" class="nav-link">FAQ</a></li>
+            </ul>
+        </nav>
 
-        <br>
+        <div class="container">
+            <!-- Checkboxes -->
+            <input type="checkbox" id="calcio" class="sport" value="calcio">
+            <label>Calcio</label>
 
-        <input type="checkbox" id="basket" class="sport" value="basket">
-        <label>Basket</label>
+            <br>
 
-        <br>
+            <input type="checkbox" id="basket" class="sport" value="basket">
+            <label>Basket</label>
 
-        <input type="checkbox" id="tennis" class="sport" value="tennis">
-        <label>Tennis</label>
+            <br>
 
-        <br>
+            <input type="checkbox" id="tennis" class="sport" value="tennis">
+            <label>Tennis</label>
 
-        <!-- Radiobuttons -->
-        <input type="radio" id="maschio" name="sesso" value="maschio" checked>
-        <label>Maschio</label>
+            <br>
 
-        <input type="radio" id="femmina" name="sesso" value="femmina">
-        <label>Femmina</label>
+            <!-- Radiobuttons -->
+            <input type="radio" id="maschio" name="sesso" value="maschio" checked>
+            <label>Maschio</label>
 
-        <br>    <br>
+            <input type="radio" id="femmina" name="sesso" value="femmina">
+            <label>Femmina</label>
 
-        <!-- Comboboxes -->
-        <select id="menu">
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-        </select>
+            <br>    <br>
 
-        <br>    <br>
+            <!-- Comboboxes -->
+            <select id="menu">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
 
-        <button onclick="stampaSelezionato()">Stampa selezionato</button>
-        <button onclick="riempiConAnni()">Riempi con anni</button>
+            <br>    <br>
 
-        <br>    <br>
+            <button onclick="stampaSelezionato()">Stampa selezionato</button>
+            <button onclick="riempiConAnni()">Riempi con anni</button>
 
-        <!-- Textboxes -->
-        <input type="text" id="txtBox1">
-        <button onclick="stampaTextBox()">Stampa TextBox</button>
+            <br>    <br>
+
+            <!-- Textboxes -->
+            <input type="text" id="txtBox1">
+            <button onclick="stampaTextBox()">Stampa TextBox</button>
+        </div>
+        
+        <footer class="footer-principale">
+            <p>&copy; 2026 Daniel Barbuto — Home page</p>
+            <ul>
+                <li><a href="https://github.com/ItzzDanii" class="footer-link">GitHub</a></li>
+                <li><a href="#" class="footer-link">LinkedIn</a></li>
+            </ul>
+        </footer>
     </body>
 
     <script src="script.js"></script>
