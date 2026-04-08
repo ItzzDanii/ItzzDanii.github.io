@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+
+    </head>
+
+    <body>
+        <!-- Checkboxes -->
+        <input type="checkbox" id="calcio" class="sport" value="calcio">
+        <label>Calcio</label>
+
+        <br>
+
+        <input type="checkbox" id="basket" class="sport" value="basket">
+        <label>Basket</label>
+
+        <br>
+
+        <input type="checkbox" id="tennis" class="sport" value="tennis">
+        <label>Tennis</label>
+
+        <br>
+
+        <!-- Radiobuttons -->
+        <input type="radio" id="maschio" name="sesso" value="maschio" checked>
+        <label>Maschio</label>
+
+        <input type="radio" id="femmina" name="sesso" value="femmina">
+        <label>Femmina</label>
+
+        <br>    <br>
+
+        <!-- Comboboxes -->
+        <select id="menu">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+
+        <br>    <br>
+
+        <button onclick="stampaSelezionato()">Stampa selezionato</button>
+        <button onclick="riempiConAnni()">Riempi con anni</button>
+
+        <br>    <br>
+
+        <!-- Textboxes -->
+        <input type="text" id="txtBox1">
+        <button onclick="stampaTextBox()">Stampa TextBox</button>
+    </body>
+
+    <script src="script.js"></script>
+</html>
