@@ -1,9 +1,15 @@
 body { 
-    background-color: white;
+    background: linear-gradient(135deg, #021024 0%, #041b49 100%);
+    background-attachment: fixed;
     max-width: 900px;
     font-family: "nunito", sans-serif;
     margin: 40px auto; 
     overflow-x: hidden;
+}
+
+body::selection{
+    background-color: #4ba5ff94;
+    color: rgb(142, 255, 255);
 }
 
 #nav-principale {
@@ -13,6 +19,8 @@ body {
     padding: 1rem 1.5rem;
     width: 100vw;
     margin-left: calc(50% - 50vw);
+    border: 3px solid #1d84b5;
+    animation: border-pulse 6s ease-out infinite;
 }
 
 #nav-principale ul {
@@ -49,39 +57,19 @@ body {
 }
 
 .title {
-    color: #000000;
+    color: #ffffff;
     text-align: center;
 }
 
-.meme-img {
-    position: absolute;
-    margin: 13% 0 0 -250px;
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-    width: 400px;
-    transition: 0.2s;
-}
-
-@media (max-width: 768px) {
-    .meme-img {
-        display: none;
-    }
-}
-
-@media (max-width: 480px) {
-    .meme-img {
-        display: none;
-    }
-}
-
-.meme-img:hover {
-    scale: 1.05;
-    transition: 0.2s;
+.progetti-container h1{
+    color: #000000;
+    margin: 20px auto 50px auto;
+    width: fit-content;
+    padding: 5px 55px;
 }
 
 .progetti-container{
-    background-color: #ffffff;
+    background-color: #90e0ef;
     background-image: radial-gradient(#000000 0.3px, transparent 0.3px);
     background-size: 5px 5px;
 
@@ -99,8 +87,9 @@ body {
 .cards{
     display: flex;  
     flex-wrap: wrap;
-    column-gap: 80px;
+    justify-content: center;
     row-gap: 30px;
+    column-gap: 50px;
 }
 
 .card{
@@ -120,7 +109,7 @@ body {
 }
 
 .card .date{
-    background-color: lightgray;
+    background-color: #caf0f8;
     text-align: center;
     font-weight: bold;
     font-size: 3.6mm;
@@ -131,7 +120,7 @@ body {
 }
 
 .card button{
-    background-color: lightgray;
+    background-color: #caf0f8;
     border: 3px solid black;
     padding: 10px;
     width:max-content;
@@ -148,12 +137,15 @@ body {
 }
 
 .card button:hover{
+    background-color: #90e0ef;
     box-shadow: 4px 4px 0 black;
     scale: 1.05;
+    transition: 0.2s;
 }
 
 .footer-principale {
-    border-top: 2px solid #e0e0e0;
+    animation: border-pulse 6s ease-out infinite;
+    border: 2px solid #1d84b5;
     margin-top: 10rem;
     padding: 2rem 0 2rem 2rem;
     color: #ffffff;
@@ -184,4 +176,28 @@ body {
     color: #4ba5ff;
     scale: 1.1;
     transition: 0.2s;
+}
+
+@keyframes border-pulse {
+    0% {
+        border-color: #a6e1fa;
+    }
+    25% {
+        border-color: #0e6ba8;
+    }
+    33% {
+        border-color: #0a2472;
+    }
+    50% {
+        border-color: #001c55;
+    }
+    66% {
+        border-color: #0a2472;
+    }
+    75% {
+        border-color: #0e6ba8;
+    }
+    100% {
+        border-color: #a6e1fa;
+    }
 }
