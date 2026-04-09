@@ -2,31 +2,53 @@
 <html>
     <head>
         <title>Esempio di funzione JavaScript</title>
+        <link rel="stylesheet" href="style_es.css">
     </head>
 
     <body>
+        <nav id="nav-principale">
+            <ul>
+                <li><a href="/index.html#about" class="nav-link">Chi sono</a></li>
+                <li><a href="/index.html#competenze" class="nav-link">Competenze</a></li>
+                <li><a href="/pagine/progetti_page.html" class="nav-link">Progetti</a></li>
+                <li><a href="/index.html#contatti" class="nav-link">Contatti</a></li>
+                <li><a href="/index.html#faq" class="nav-link">FAQ</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>What Can JavaScript Do?</h2>
 
-        <h2>What Can JavaScript Do?</h2>
+            <p id="id1">JavaScript can change HTML content.</p>
 
-        <p id="id1">JavaScript can change HTML content.</p>
+            <button type="button" id="btn1" onclick="cambiaTesto()">Click Me!</button>
+            <button type="button" id="btn2">Cliccami!</button>
+            
+            <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
 
-        <button type="button" id="btn1" onclick="cambiaTesto()">Click Me!</button>
-        <button type="button" id="btn2">Cliccami!</button>
-        
-        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+            <button type="button" onclick="accendiLuce()">Turn on the light</button>
 
-        <button type="button" onclick="accendiLuce()">Turn on the light</button>
+            <img id="myImage" style="width:150px; height: 150px;">
 
-        <img id="myImage" style="width:150px; height: 150px;">
+            <button type="button" onclick="spegniLuce()">Turn off the light</button>
+            </main>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
 
-        <button type="button" onclick="spegniLuce()">Turn off the light</button>
-
-        <br>
-        <br>
-        <br>
-        <button><a href="/index.html" style="text-decoration: none; color: royalblue;">Torna alla homepage</a></button>
-
-
+        <footer class="footer-principale">
+            <p>&copy; 2026 Daniel Barbuto — Home page</p>
+            <ul>
+                <li><a href="https://github.com/ItzzDanii" class="footer-link">GitHub</a></li>
+                <li><a href="#" class="footer-link">LinkedIn</a></li>
+            </ul>
+        </footer>
     </body>
 
     <script>

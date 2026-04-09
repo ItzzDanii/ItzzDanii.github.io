@@ -19,7 +19,7 @@ body::selection{
     padding: 1rem 1.5rem;
     width: 100vw;
     margin-left: calc(50% - 50vw);
-    border: 3px solid #1d84b5;
+    border-bottom: 3px solid #1d84b5;
     animation: border-pulse 6s ease-out infinite;
 }
 
@@ -85,6 +85,8 @@ body::selection{
 }
 
 .cards{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;  
     flex-wrap: wrap;
     justify-content: center;
@@ -164,16 +166,17 @@ body::selection{
 }
 
 .footer-link {
-    color: #ffffff;
+    color: #5ebdd8;
     text-decoration: none;
 }
 
-.footer-link:hover {
-    text-decoration: underline;
+.footer-principale a {
+    font-size: 16px;
 }
 
-.footer-principale a:hover {
-    color: #4ba5ff;
+.footer-principale li:hover {
+    color: #075171;
+    text-decoration: underline;
     scale: 1.1;
     transition: 0.2s;
 }

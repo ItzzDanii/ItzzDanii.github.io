@@ -23,32 +23,14 @@ body::selection{
     color: rgb(142, 255, 255);
 }
 
-.footer-principale a {
-    font-size: 16px;
-}
-
-a {
-    color: #218cff;
-    text-decoration: underline;
-}
-
-a:hover {
-    color: #4ba5ff;
-    scale: 1.1;
-    transition: 0.2s;
-}
-
-a:focus-visible {
-    outline: 3px solid #1a5fa8;
-    outline-offset: 2px;
-    border-radius: 2px;
-}
-
 #nav-principale {
     background-color: #000000;
     padding: 1rem 1.5rem;
     width: 100vw;
     margin-left: calc(50% - 50vw);
+
+    animation: border-pulse 6s ease-out infinite;
+    border-bottom: 3px solid #1d84b5;
 }
 
 #nav-principale ul {
@@ -76,28 +58,9 @@ a:focus-visible {
     transition: 0.2s;
 }
 
-.btn {
-    display: inline-block;
-    background-color: #65b1c9;
-    border: 2px black solid;
-    box-shadow: 2px 2px black;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0.75rem 1.75rem;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background-color: #87dddd;
-    color: #ffffff;
-    scale: 1.1;
-    transition: 0.2s;
-}
-
 .footer-principale {
     animation: border-pulse 6s ease-out infinite;
-    border: 2px solid #1d84b5;
+    border: 3px solid #1d84b5;
     margin-top: 40rem;
     padding: 2rem 0 2rem 2rem;
     color: #ffffff;
@@ -106,6 +69,10 @@ a:focus-visible {
     width: 100vw;
     margin-left: calc(50% - 50vw);
     text-align: center;
+}
+
+.footer-principale a {
+    font-size: 16px;
 }
 
 .footer-principale ul {

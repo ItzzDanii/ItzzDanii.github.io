@@ -34,10 +34,6 @@ blockquote>p {
     color: rgba(122, 195, 255, 0.795);
 }
 
-.footer-principale a {
-    font-size: 16px;
-}
-
 a {
     color: #218cff;
     text-decoration: underline;
@@ -335,6 +331,10 @@ blockquote footer {
 .footer-link {
     color: #5ebdd8;
     text-decoration: none;
+}
+
+.footer-principale a {
+    font-size: 16px;
 }
 
 .footer-principale li:hover {
