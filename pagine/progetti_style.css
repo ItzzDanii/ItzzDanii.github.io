@@ -25,6 +25,14 @@ body {
     align-items: center;
 }
 
+@media (max-width: 480px) {
+    #nav-principale ul {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 10px;
+    }
+}
+
 .nav-link {
     display: block;
     color: #e8e8e8;
@@ -47,11 +55,24 @@ body {
 
 .meme-img {
     position: absolute;
-    top: 45%;
-    left: 10%;
-    display: block;
+    margin: 13% 0 0 -250px;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
     width: 400px;
-    height: 400px;
+    transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+    .meme-img {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .meme-img {
+        display: none;
+    }
 }
 
 .meme-img:hover {
@@ -69,6 +90,12 @@ body {
     margin-top: 30px;  
 }
 
+@media (max-width: 600px) {
+    .progetti-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 .cards{
     display: flex;  
     flex-wrap: wrap;
@@ -84,6 +111,12 @@ body {
     color: black;
     border: 2px solid black;
     box-shadow: 4px 4px 0 black;
+}
+
+@media (max-width: 600px) {
+    .card {
+        max-width: 100%;
+    }
 }
 
 .card .date{

@@ -72,6 +72,14 @@ a:focus-visible {
     align-items: center;
 }
 
+@media (max-width: 480px) {
+    #nav-principale ul {
+        flex-direction: column; /* I link si impilano verticalmente */
+        column-gap: 0;
+        row-gap: 10px;
+    }
+}
+
 .nav-link {
     display: block;
     color: #e8e8e8;
@@ -108,6 +116,12 @@ a:focus-visible {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
 }
 
 .hero-intro {
@@ -151,6 +165,22 @@ a:focus-visible {
 .sezione {
     margin-bottom: 3rem;
     padding-top: 1rem;
+}
+
+#progetti h2{
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Una sola colonna su schermi piccoli */
+    }
 }
 
 .card {
