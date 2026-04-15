@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Javascript - Quiz</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav id="nav-principale">
+                <ul>
+                    <li><a href="/index.html#about" class="nav-link">Chi sono</a></li>
+                    <li><a href="/index.html#competenze" class="nav-link">Competenze</a></li>
+                    <li><a href="/index.html" class="nav-link">Home Page</a></li>
+                    <li><a href="/index.html#contatti" class="nav-link">Contatti</a></li>
+                    <li><a href="/index.html#faq" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+
+        <div class="dati_anagrafici">
+            <h3>Dati anagrafici</h3>
+
+            <div class="nome-cognome-input">
+                <label>Cognome: </label>
+                <input type="text" id="cognome" name="cognome">
+
+                <label>Nome: </label>
+                <input type="text" id="nome" name="nome">
+            </div>
+
+            <h3>Data di nascita</h3>
+            <div class="data-input">
+                <label>Giorno</label>
+                <input type="text" id="giorno" name="giorno">
+
+                <label>Mese</label>
+                <select id="mese" name="mese">
+                    <option>GEN</option>
+                </select>
+
+                <label>Anno</label>
+                <input type="text" id="anno" name="anno">
+            </div>
+        </div>
+
+        <fieldset class="quiz">
+            <legend>Domande</legend>
+
+            <div class="domande" id="1">
+                <label>Qual è il linguaggio di programmazione utilizzato 
+                    per creare e modificare i database? (in maiuscolo)</label>
+            </div>
+
+            <div class="risposte" id="1">
+                <input type="text" id="risp1" name="risp1">
+            </div>
+
+<!---------------------------------------------------------------------------------------------------->
+            
+            <div class="domande" id="2">
+                <label>Quanti valori può assumere una variabile booleana?</label>
+            </div>
+
+            <div class="risposte" id="2">
+                <select id="combo-risp2">
+                    <option id="risp2_1" value="1">1</option>
+                    <option id="risp2_2" value="2">2</option>
+                    <option id="risp2_3" value="4">4</option>
+                    <option id="risp2_4" value="256">256</option>
+                </select>
+            </div>
+
+<!---------------------------------------------------------------------------------------------------->
+
+            <div class="domande" id="3">
+                <label>Quali sono le librerie caricate a run-time?</label>
+            </div>
+
+            <div class="risposte" id="3">
+                <input type="radio" id="risp3_1" name="scelta_risp3" value="Stat">
+                <label for="risp3_1">Statiche</label>
+
+                <br>
+
+                <input type="radio" id="risp3_2" name="scelta_risp3" value="Dinam">
+                <label for="risp3_2">Dinamiche</label>
+            </div>
+
+<!---------------------------------------------------------------------------------------------------->
+
+            <div class="domande" id="4">
+                <label>Quali tra queste sono parole chiave in C++?</label>
+            </div>
+
+            <div class="risposte" id="4">
+            <input type="checkbox" id="risp4_1" value="void">
+            <label>void</label>
+
+            <br>
+
+            <input type="checkbox" id="risp4_2" value="int">
+            <label>integer</label>
+
+            <br>
+
+            <input type="checkbox" id="risp4_3" value="char">
+            <label>char</label>
+            </div>
+
+<!---------------------------------------------------------------------------------------------------->
+
+            <div class="domande" id="5">
+                <label>8 bit corrispondo a un...</label>
+            </div>
+
+            <div class="risposte" id="5">
+            <input type="text" id="risp5" name="risp5">
+            </div>
+        </fieldset>
+
+        <div class="buttons">
+            <button onclick="elaboraDati()">Elabora</button>
+            <button onclick="cancellaDati()">Cancella</button>
+        </div>
+
+        <div class="container-esito">
+            <fieldset class="score">
+                <legend>Esito</legend>
+                <label>Punteggio:</label>
+                <input type="text" id="txtScore" name="txtScore" readonly>
+            </fieldset>
+
+            <div class="utente-score">
+                <button onclick="utenteConScore()">Utente con punteggio</button>
+                <input type="text" id="utente_score" name="utente_score">
+            </div>
+        </div>
+
+        <footer class="footer-principale">
+            <p>&copy; 2026 Daniel Barbuto — Home page</p>
+            <ul>
+                <li><a href="https://github.com/ItzzDanii" class="footer-link">GitHub</a></li>
+                <li><a href="#" class="footer-link">LinkedIn</a></li>
+            </ul>
+        </footer>
+
+    </body>
+
+    <script src="script.js"></script>
+</html>
