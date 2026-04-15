@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Form di registrazione</title>
+    </head>
+
+    <body>
+        <nav id="nav-principale">
+            <ul>
+                <li><a href="/index.html#about" class="nav-link">Chi sono</a></li>
+                <li><a href="/index.html#competenze" class="nav-link">Competenze</a></li>
+                <li><a href="/index.html" class="nav-link">Home Page</a></li>
+                <li><a href="/index.html#contatti" class="nav-link">Contatti</a></li>
+                <li><a href="/index.html#faq" class="nav-link">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <div class="title">
+            <h1>REGISTRAZIONE UTENTE</h1>
+        </div>
+
+        <div class="input-container">
+            <div class="cognome-input">
+                <label>Cognome:</label>
+                <input type="text" id="cognome" name="cognome">
+            </div>
+
+            <div class="nome-input">
+                <label>Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+
+            <div class="codice-input">
+                <label>Codice Fiscale:</label>
+                <input type="text" id="codice_fiscale" name="codice_fiscale">
+            </div>
+            
+            <div class="sesso-input">
+                <label>Sesso:</label>
+                <input type="radio" id="maschio" name="sesso" value="maschio" checked>
+                <label for="maschio">Maschio</label>
+                <input type="radio" id="femmina" name="sesso" value="femmina">
+                <label for="femmina">Femmina</label>
+            </div>
+            
+            <div class="anno-input">
+                <label>Anno di Nascita:</label>
+                <select id="anno_nascita" name="anno_nascita">
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                </select>
+            </div>
+
+            <div class="termini-input">
+                <input type="checkbox" id="termini" name="termini">
+                <label for="termini">Accetto i termini del servizio</label>
+            </div>
+    
+            <button class="btnRegister" onclick="validaDati()">Registrati</button>
+        </div>
+
+    <footer class="footer-principale">
+      <p>&copy; 2026 Daniel Barbuto — Home page</p>
+        <ul>
+            <li><a href="https://github.com/ItzzDanii" class="footer-link">GitHub</a></li>
+            <li><a href="#" class="footer-link">LinkedIn</a></li>
+        </ul>
+    </footer>
+    </body>
+
+    <script src="script.js"></script>
+</html>
