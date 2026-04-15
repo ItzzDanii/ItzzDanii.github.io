@@ -56,6 +56,13 @@ a:focus-visible {
     padding: 1rem 1.5rem;
     width: 100vw;
     margin-left: calc(50% - 50vw);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    border-bottom: 3px solid #1d84b5;
+    animation: border-pulse 6s ease-out infinite;
 }
 
 #nav-principale ul {
@@ -100,7 +107,7 @@ a:focus-visible {
     width: 100vw;
     margin-left: calc(50% - 50vw);
     text-align: center;
-    border: 3px solid #1d84b5;
+    border-bottom: 3px solid #1d84b5;
     animation: border-pulse 6s ease-out infinite;
 }
 
