@@ -73,6 +73,12 @@ body {
     margin-top: -15px;
 }
 
+.card:last-child .date:before{
+    content: "Più recente";
+    color: rgb(0, 47, 255);
+    margin-right: 15px;
+}
+
 .card button{
     background-color: #caf0f8;
     border: 3px solid black;
