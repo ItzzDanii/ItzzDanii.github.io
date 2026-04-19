@@ -3,48 +3,8 @@ body{
     overflow-x: hidden;
 }
 
-#nav-principale {
-    margin-top: -8px;
-    margin-bottom: 60px;
-    background-color: #000000;
-    padding: 1rem 1.5rem;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    border-bottom: 3px solid #1d84b5;
-    animation: border-pulse 6s ease-out infinite;
-}
-
-#nav-principale ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    column-gap: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (max-width: 480px) {
-    #nav-principale ul {
-        flex-direction: column;
-        column-gap: 0;
-        row-gap: 10px;
-    }
-}
-
-.nav-link {
-    display: block;
-    color: #e8e8e8;
-    text-decoration: none;
-    padding: 0.4rem 0;
-}
-
-.nav-link:hover,
-.nav-link:focus-visible {
-    color: #7eb8f7;
-    outline-color: #7eb8f7;
-    scale: 1.1;
-    transition: 0.2s;
+.title{
+    margin-top: 100px;
 }
 
 .title,.input-container{
@@ -65,64 +25,5 @@ body{
     width: 150px;
     height: 50px;
     margin-top: 20px;
-}
-
-.footer-principale {
-    animation: border-pulse 6s ease-out infinite;
-    border: 2px solid #1d84b5;
-    margin-top: 20rem;
-    padding: 2rem 0 2rem 2rem;
-    color: #ffffff;
-    font-size: 0.9rem;
-    background-color: black;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    text-align: center;
-    margin-bottom: -40px;
-}
-
-.footer-principale ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 0.5rem;
-}
-
-.footer-link {
-    color: #5ebdd8;
-    text-decoration: none;
-}
-
-.footer-principale a {
-    font-size: 16px;
-}
-
-.footer-principale li:hover {
-    color: #075171;
-    text-decoration: underline;
-    scale: 1.1;
-    transition: 0.2s;
-}
-
-@keyframes border-pulse {
-    0% {
-        border-color: #a6e1fa;
-    }
-    25% {
-        border-color: #0e6ba8;
-    }
-    33% {
-        border-color: #0a2472;
-    }
-    50% {
-        border-color: #001c55;
-    }
-    66% {
-        border-color: #0a2472;
-    }
-    75% {
-        border-color: #0e6ba8;
-    }
-    100% {
-        border-color: #a6e1fa;
-    }
+    margin-bottom: 250px;
 }

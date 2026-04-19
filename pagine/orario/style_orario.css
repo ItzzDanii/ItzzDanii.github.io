@@ -3,49 +3,7 @@ body{
     font-family:Arial,sans-serif;
     margin: 0;
     padding: 40px;
-    color:#000000;
     overflow-x: hidden;
-}
-
-.footer-principale a:hover {
-    color: #4ba5ff;
-    scale: 1.1;
-    transition: 0.2s;
-}
-
-#nav-principale {
-    background-color: #000000;
-    padding: 1.5rem 1.5rem;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-top: -40px;
-    border-bottom: 3px solid #1d84b5;
-    animation: border-pulse 6s ease-out infinite;
-}
-
-#nav-principale ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    column-gap: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-link {
-    display: block;
-    color: #e8e8e8;
-    text-decoration: none;
-    padding: 0.4rem 0;
-}
-
-.nav-link:hover,
-.nav-link:focus-visible {
-    color: #7eb8f7;
-    outline-color: #7eb8f7;
-    scale: 1.1;
-    transition: 0.2s;
 }
 
 .page{
@@ -54,14 +12,6 @@ body{
     border-radius: 25px;
     width: 75%;
     margin: 100px auto 0 auto;
-}
-
-.link-home {
-    padding-left: 45%;
-}
-
-.link-home a{
-    color: rgb(255, 255, 255);
 }
 
 /* Titolo */
@@ -78,6 +28,7 @@ body{
 }
 
 table{
+    color: black;
     background-color: #e1e5f2;
     border-collapse: collapse; /* Per attaccare i bordi */
 }
@@ -123,65 +74,4 @@ table a:hover{
 
 tbody td:hover{
     background-color:#c0fdfb;
-}
-
-.footer-principale {
-   animation: border-pulse 6s ease-out infinite;
-    border: 2px solid #1d84b5;
-    margin-top: 4rem;
-    padding: 2rem 0 2rem 2rem;
-
-    color: #ffffff;
-    font-size: 0.9rem;
-    background-color: black;
-
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    text-align: center;
-
-    margin-top: 90px;
-    margin-bottom: -40px;
-
-}
-
-.footer-principale ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 1.5rem;
-}
-
-.footer-link {
-    color: #5ebdd8;
-    text-decoration: none;
-}
-
-.footer-link:hover {
-    color: #075171;
-    text-decoration: underline;
-    scale: 1.1;
-    transition: 0.2s;
-}
-
-@keyframes border-pulse {
-    0% {
-        border-color: #a6e1fa;
-    }
-    25% {
-        border-color: #0e6ba8;
-    }
-    33% {
-        border-color: #0a2472;
-    }
-    50% {
-        border-color: #001c55;
-    }
-    66% {
-        border-color: #0a2472;
-    }
-    75% {
-        border-color: #0e6ba8;
-    }
-    100% {
-        border-color: #a6e1fa;
-    }
 }
