@@ -7,56 +7,8 @@ body {
     overflow-x: hidden;
 }
 
-body::selection{
-    background-color: #4ba5ff94;
-    color: rgb(142, 255, 255);
-}
-
-#nav-principale {
-    margin-top: -40px;
-    margin-bottom: 60px;
-    background-color: #000000;
-    padding: 1rem 1.5rem;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    border-bottom: 3px solid #1d84b5;
-    animation: border-pulse 6s ease-out infinite;
-}
-
-#nav-principale ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    column-gap: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (max-width: 480px) {
-    #nav-principale ul {
-        flex-direction: column;
-        column-gap: 0;
-        row-gap: 10px;
-    }
-}
-
-.nav-link {
-    display: block;
-    color: #e8e8e8;
-    text-decoration: none;
-    padding: 0.4rem 0;
-}
-
-.nav-link:hover,
-.nav-link:focus-visible {
-    color: #7eb8f7;
-    outline-color: #7eb8f7;
-    scale: 1.1;
-    transition: 0.2s;
-}
-
 .title {
+    margin: 100px 0 50px 0;
     color: #ffffff;
     text-align: center;
 }
@@ -75,7 +27,7 @@ body::selection{
 
     padding: 20px;
     border: 2px solid rgb(0, 0, 0);
-    margin-top: 30px;  
+    margin-bottom: 100px; 
 }
 
 @media (max-width: 600px) {
@@ -143,64 +95,4 @@ body::selection{
     box-shadow: 4px 4px 0 black;
     scale: 1.05;
     transition: 0.2s;
-}
-
-.footer-principale {
-    animation: border-pulse 6s ease-out infinite;
-    border: 2px solid #1d84b5;
-    margin-top: 10rem;
-    padding: 2rem 0 2rem 2rem;
-    color: #ffffff;
-    font-size: 0.9rem;
-    background-color: black;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    text-align: center;
-    margin-bottom: -40px;
-}
-
-.footer-principale ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 0.5rem;
-}
-
-.footer-link {
-    color: #5ebdd8;
-    text-decoration: none;
-}
-
-.footer-principale a {
-    font-size: 16px;
-}
-
-.footer-principale li:hover {
-    color: #075171;
-    text-decoration: underline;
-    scale: 1.1;
-    transition: 0.2s;
-}
-
-@keyframes border-pulse {
-    0% {
-        border-color: #a6e1fa;
-    }
-    25% {
-        border-color: #0e6ba8;
-    }
-    33% {
-        border-color: #0a2472;
-    }
-    50% {
-        border-color: #001c55;
-    }
-    66% {
-        border-color: #0a2472;
-    }
-    75% {
-        border-color: #0e6ba8;
-    }
-    100% {
-        border-color: #a6e1fa;
-    }
 }
