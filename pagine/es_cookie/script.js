@@ -1,7 +1,7 @@
 //un cookie ha una duration
 function setCookie(nome,valore,durataGiorni){
     let data = new Date();
-    data.setTime(data.getTime()+(giorni * 24 * 60 * 60 * 1000)); // converto da gg in ms
+    data.setTime(data.getTime()+(durataGiorni * 24 * 60 * 60 * 1000)); // converto da gg in ms
     document.cookie = nome + "=" 
                         + encodeURIComponent(valore) // toglie spazi
                         + ";expires=" + data.toUTCString(); // scadenza (con fuso orario, + preciso)
@@ -9,7 +9,16 @@ function setCookie(nome,valore,durataGiorni){
 }
 
 function getCookie(nome){
+    let cookies = document.cookie.split(";"); // splitto i cookie in un array
 
+    for (let i=0; i < cookies.length; i++){
+        let c = cookies[i].trim();
+        if (c.startsWith(nome + "=")) {
+            return decodeURIComponent(c.substring(nome.length + 1));
+        }
+    }
+
+    window.location.href = "page2.html" ;
 }
 
 function salvaDati(){
