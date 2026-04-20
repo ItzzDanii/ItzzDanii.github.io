@@ -36,8 +36,8 @@ function caricaRiepilogo(){
     let cognome = getCookie("cognome");
 
     let s = "";
-    s+="Nome: "+nome;
+    s+="<strong>Nome: </strong>"+nome;
     s+="<br>";
-    s+="Cognome: "+cognome;
+    s+="<strong>Cognome: </strong>"+cognome;
     document.getElementById("riepilogo").innerHTML = s; //dentro il div
 }

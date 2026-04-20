@@ -1,0 +1,18 @@
+main{
+    margin-top: 10rem;
+    text-align: center;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+}
+
+.btnBack{
+    width: 150px;
+    margin-top: 50px;
+}
+
+.footer-principale{
+    margin-top: 29rem;
+}
