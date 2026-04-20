@@ -67,16 +67,9 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: 3.6mm;
-    margin-left: -15px;
+    margin-left: -24px;
     padding: 5px 0;
-    margin-right: -15px;
-    margin-top: -15px;
-}
-
-.card:last-child .date:before{
-    content: "Più recente";
-    color: rgb(0, 47, 255);
-    margin-right: 15px;
+    margin-right: -24px;
 }
 
 .card button{
