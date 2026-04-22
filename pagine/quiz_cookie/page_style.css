@@ -1,0 +1,62 @@
+.title-question {
+    max-width: 500px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-question {
+    margin-top: 100px;
+    max-width: 350px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-question input[type="text"],button,select,label{
+    height: 30px;
+}
+
+select{
+    width: 60px;
+    text-align: center;
+}
+
+.input-question button{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: rgb(71, 129, 255);
+    border-color: rgb(31, 31, 255);
+    border-radius: 5px;
+    border-width: 3px;
+    box-shadow: 2px 2px rgb(42, 100, 165);
+    transition: 0.2s;
+    margin-left: 10px;
+}
+
+.input-question button:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.input-question button:active{
+    background-color: rgb(70, 169, 255);
+    transform: translate(+2px,+2px);
+}
+
+.input-question input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 23px;
+    margin-bottom: 50px;
+}
+
+.input-question input[type="checkbox"] + label{
+    font-weight: bold;
+}
+
+.input-question input[type="checkbox"]:hover,label:hover{
+    cursor: pointer;
+    scale: 1.2;
+    transition: 0.2s;
+}

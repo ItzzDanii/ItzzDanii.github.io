@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Quiz Cookies</title>
+
+        <link rel="stylesheet" href="page_style.css">
+        <link rel="stylesheet" href="/home_style.css">
+    </head>
+
+    <body>
+        <div class="title-question">
+            <h1>Quali sono le librerie caricate a run-time?</h1>
+        </div>
+
+        <div class="input-question">
+            <input type="radio" id="risp3.1" name="risp3"> <label onclick="document.getElementById('risp3.1').checked =!document.getElementById('risp3.1').checked">Statiche</label>
+            <input type="radio" id="risp3.2" name="risp3"> <label onclick="document.getElementById('risp3.2').checked =!document.getElementById('risp3.2').checked">Dinamiche</label>
+            <button onclick="window.location.href='page4.html',salvaDati(3)">Conferma risposta</button>
+        </div>
+    </body>
+
+    <script src="script.js"></script>
+</html>
