@@ -90,29 +90,35 @@ function caricaRiepilogo(){
     let r4 = getCookie("risp4") || "Nessuna risposta";
     let r5 = getCookie("risp5") || "Nessuna risposta";
     
-    if(r1.toUpperCase() === "SQL")
-        score++;
-
-    if(r2 === "2")
-        score++;
-
-    if(r3.toUpperCase() === "DINAMICHE")
-        score++;
-
-    if(r4 === "voidintegerchar")
-        score++;
-
-    if(r5.toUpperCase() === "BYTE")
-        score++;
-
     let s = "";
 
-    s += "<h3>Risposte Quiz</h3>";
-    s += "<strong>Risposta 1: </strong>" + r1 + "<br>";
-    s += "<strong>Risposta 2: </strong>" + r2 + "<br>";
-    s += "<strong>Risposta 3: </strong>" + r3 + "<br>";
-    s += "<strong>Risposta 4: </strong>" + r4 + "<br>";
-    s += "<strong>Risposta 5: </strong>" + r5 + "<br>";
+    s += "<h1>Risposte Quiz</h1>";
+
+    if(r1.toUpperCase() === "SQL"){
+        score++;
+        s += "<strong>Risposta 1: </strong>" + r1 + " ☑️<br>";
+    } else s += "<strong>Risposta 1: </strong>" + r1 + "<br>";
+
+    if(r2 === "2"){
+        score++;
+        s += "<strong>Risposta 2: </strong>" + r2 + " ☑️<br>";
+    } else s += "<strong>Risposta 2: </strong>" + r2 + " ✖️<br>";
+
+    if(r3.toUpperCase() === "DINAMICHE"){
+        score++;
+        s += "<strong>Risposta 3: </strong>" + r3 + " ☑️<br>";
+    } else s += "<strong>Risposta 3: </strong>" + r3 + " ✖️<br>";
+
+    if(r4 === "voidintegerchar"){
+        score++;
+        s += "<strong>Risposta 4: </strong>" + r4 + " ☑️<br>";
+    } else s += "<strong>Risposta 4: </strong>" + r4 + " ✖️<br>";
+
+    if(r5.toUpperCase() === "BYTE"){
+        score++;
+        s += "<strong>Risposta 5: </strong>" + r5 + " ☑️<br>";
+    } else s += "<strong>Risposta 5: </strong>" + r5 + " ✖️<br>";
+
     s += "<strong>Score: </strong>" + score + "/5";
     if(score === 5)
         s+="<br><br><em>(Quiz completato!)</em></b>";
