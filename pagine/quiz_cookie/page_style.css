@@ -1,3 +1,7 @@
+body{
+    text-align: center;
+}
+
 .title-question {
     max-width: 500px;
     text-align: center;
@@ -59,4 +63,16 @@ select{
     cursor: pointer;
     scale: 1.2;
     transition: 0.2s;
+}
+
+.footer-principale{
+    margin-top: 50%;
+}
+
+#riepilogo + .footer-principale{
+    margin-top: 60%;
+}
+
+#nav-principale {
+    margin-bottom: 15%;
 }

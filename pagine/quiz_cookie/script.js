@@ -1,3 +1,5 @@
+let score = 0;
+
 //un cookie ha una duration
 function setCookie(nome,valore,durataGiorni){
     let data = new Date();
@@ -51,17 +53,24 @@ function salvaDati(numero_risposta){
             break;
 
         case 4:
-            let r4;
+            let r4 = [];
             if(document.getElementById("risp4.1").checked == true)
-                r4 += "void";
+                r4.push("void");
             if(document.getElementById("risp4.2").checked == true)
-                r4 += "integer";
+                r4.push("integer");
              if(document.getElementById("risp4.3").checked == true)
-                r4 += "char";
+                r4.push("char");
             else  if(document.getElementById("risp4.1").checked && document.getElementById("risp4.2").checked && document.getElementById("risp4.3").checked)
-                r4 = "Nessuna risposta";
+                r4.push("Nessuna risposta");
 
-            setCookie("risp4",r4,1);
+            let r4_str = "";
+
+            if(r4.length > 0){
+                r4_str = r4.join("");
+            }
+            else r4_str = "Nessuna risposta";
+
+            setCookie("risp4",r4_str,1);
             break;
 
         case 5:
@@ -81,6 +90,21 @@ function caricaRiepilogo(){
     let r4 = getCookie("risp4") || "Nessuna risposta";
     let r5 = getCookie("risp5") || "Nessuna risposta";
     
+    if(r1.toUpperCase() === "SQL")
+        score++;
+
+    if(r2 === "2")
+        score++;
+
+    if(r3.toUpperCase() === "DINAMICHE")
+        score++;
+
+    if(r4 === "voidintegerchar")
+        score++;
+
+    if(r5.toUpperCase() === "BYTE")
+        score++;
+
     let s = "";
 
     s += "<h3>Risposte Quiz</h3>";
@@ -89,7 +113,9 @@ function caricaRiepilogo(){
     s += "<strong>Risposta 3: </strong>" + r3 + "<br>";
     s += "<strong>Risposta 4: </strong>" + r4 + "<br>";
     s += "<strong>Risposta 5: </strong>" + r5 + "<br>";
-
+    s += "<strong>Score: </strong>" + score + "/5";
+    if(score === 5)
+        s+="<br><br><em>(Quiz completato!)</em></b>";
     // Inseriamo tutto nel div con id "riepilogo"
     let container = document.getElementById("riepilogo");
     if(container) {
