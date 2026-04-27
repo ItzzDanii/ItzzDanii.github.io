@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <link rel="stylesheet" href="/home_style.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="tabella">
+            <table>
+                <tr>
+                    <th>Q.tà</th>
+                    <th>Descrizione</th>
+                    <th>Costo Unitario</th>
+                    <th>Totale</th>
+                </tr>
+                    
+                <tr>
+                    <td> <input type="text" id="txtQMouse"> </td>
+                    <td>mouse</td>
+                    <td>16$</td>
+                    <td><input type="text" id="txtTotMouse"></td>
+                </tr>
+
+                <tr>
+                    <td> <input type="text" id="txtQTast"> </td>
+                    <td>tastiera 105 tasti</td>
+                    <td>25$</td>
+                    <td><input type="text" id="txtTotTast"></td>
+                </tr>
+
+                <tr>
+                    <td> <input type="text" id="txtQStamp"> </td>
+                    <td>stampante deskjet colori</td>
+                    <td>350$</td>
+                    <td><input type="text" id="txtTotStamp"></td>
+                </tr>
+
+                <tr>
+                    <td> <input type="text" id="txtQScan"> </td>
+                    <td>scanner A4 colori</td>
+                    <td>200$</td>
+                    <td><input type="text" id="txtTotScan"></td>
+                </tr>
+
+                <tr id="row-tot">
+                    <td colspan="3"><button onclick="calcolaTotale()">TOTALE ORDINE ---></button></td>
+                    <td><input type="text" id="txtTot"></td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+
+        <label>Deisdero ricevere notifiche</label>
+        <input type="radio" id="radioSi"> <label>Si</label>
+        <input type="radio" id="radioNo"> <label>No</label>
+
+        <br>
+
+        <label>E-mail:</label>
+        <input type="text" id="txtEmail">
+        
+        <br>
+
+        <label>Pagamento:</label>
+        <select id="comboPaga">
+            <option id="optContanti">Contanti</option>
+            <option id="optCarta">Carta di credito</option>
+            <option id="optBonif">Bonifico</option>
+        </select>
+
+        <br>
+
+        <button id="btnOrdina">INVIA ORDINE</button>
+    </body>
+
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,17 @@
+#tabella th,td {
+    border: 5px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+#tabella table{
+    border-collapse: collapse;
+}
+
+#tabella #row-tot td{
+    text-align: right;
+}
+
+#btnOrdina {
+    margin-top: 50px;
+}
