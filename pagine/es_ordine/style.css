@@ -1,7 +1,11 @@
+#tabella{
+    margin-top: 100px;
+    text-align: center;
+}
+
 #tabella th,td {
     border: 5px solid black;
     padding: 5px;
-    text-align: center;
 }
 
 #tabella table{
@@ -14,4 +18,12 @@
 
 #btnOrdina {
     margin-top: 50px;
+}
+
+#tabella input{
+    text-align: center;
+}
+
+.footer-principale{
+    margin-top: 200px;
 }

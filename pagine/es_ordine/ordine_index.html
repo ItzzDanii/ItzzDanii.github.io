@@ -6,6 +6,16 @@
     </head>
 
     <body>
+        <nav id="nav-principale">
+            <ul>
+                <li><a href="/index.html#about" class="nav-link">Chi sono</a></li>
+                <li><a href="/index.html#competenze" class="nav-link">Competenze</a></li>
+                <li><a href="/index.html" class="nav-link">Home Page</a></li>
+                <li><a href="/index.html#contatti" class="nav-link">Contatti</a></li>
+                <li><a href="/index.html#faq" class="nav-link">FAQ</a></li>
+            </ul>
+        </nav>
+
         <div id="tabella">
             <table>
                 <tr>
@@ -16,45 +26,45 @@
                 </tr>
                     
                 <tr>
-                    <td> <input type="text" id="txtQMouse"> </td>
+                    <td> <input type="text" id="txtQMouse" placeholder="0"> </td>
                     <td>mouse</td>
                     <td>16$</td>
-                    <td><input type="text" id="txtTotMouse"></td>
+                    <td><input type="text" id="txtTotMouse" placeholder="0"></td>
                 </tr>
 
                 <tr>
-                    <td> <input type="text" id="txtQTast"> </td>
+                    <td> <input type="text" id="txtQTast" placeholder="0"> </td>
                     <td>tastiera 105 tasti</td>
                     <td>25$</td>
-                    <td><input type="text" id="txtTotTast"></td>
+                    <td><input type="text" id="txtTotTast" placeholder="0"></td>
                 </tr>
 
                 <tr>
-                    <td> <input type="text" id="txtQStamp"> </td>
+                    <td> <input type="text" id="txtQStamp" placeholder="0"> </td>
                     <td>stampante deskjet colori</td>
                     <td>350$</td>
-                    <td><input type="text" id="txtTotStamp"></td>
+                    <td><input type="text" id="txtTotStamp" placeholder="0"></td>
                 </tr>
 
                 <tr>
-                    <td> <input type="text" id="txtQScan"> </td>
+                    <td> <input type="text" id="txtQScan" placeholder="0"> </td>
                     <td>scanner A4 colori</td>
                     <td>200$</td>
-                    <td><input type="text" id="txtTotScan"></td>
+                    <td><input type="text" id="txtTotScan" placeholder="0"></td>
                 </tr>
 
                 <tr id="row-tot">
                     <td colspan="3"><button onclick="calcolaTotale()">TOTALE ORDINE ---></button></td>
-                    <td><input type="text" id="txtTot"></td>
+                    <td><input type="text" id="txtTot" placeholder="0"></td>
                 </tr>
             </table>
         </div>
 
         <br>
 
-        <label>Deisdero ricevere notifiche</label>
-        <input type="radio" id="radioSi"> <label>Si</label>
-        <input type="radio" id="radioNo"> <label>No</label>
+        <label>Desidero ricevere notifiche</label>
+        <input type="radio" id="radioSi" name="notifiche"> <label>Si</label>
+        <input type="radio" id="radioNo" name="notifiche"> <label>No</label>
 
         <br>
 
@@ -72,7 +82,15 @@
 
         <br>
 
-        <button id="btnOrdina">INVIA ORDINE</button>
+        <button id="btnOrdina" onclick="inviaOrdine()">INVIA ORDINE</button>
+    
+        <footer class="footer-principale">
+        <p>&copy; 2026 Daniel Barbuto — Home page</p>
+            <ul>
+                <li><a href="https://github.com/ItzzDanii" class="footer-link">GitHub</a></li>
+                <li><a href="#" class="footer-link">LinkedIn</a></li>
+            </ul>
+        </footer>
     </body>
 
     <script src="script.js"></script>
