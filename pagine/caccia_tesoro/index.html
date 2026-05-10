@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caccia al Tesoro</title>
+    <link rel="stylesheet" href="/home_style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="nav-principale">
+        <ul>
+            <li><a href="#about" class="nav-link">Chi sono</a></li>
+            <li><a href="#competenze" class="nav-link">Competenze</a></li>
+            <li><a href="/pagine/progetti_page.html" class="nav-link">Progetti</a></li>
+            <li><a href="#contatti" class="nav-link">Contatti</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <h1>Caccia al Tesoro</h1>
+
+    <div id="pannello-stato">
+        <p>Player: <span id="nome-giocatore"></span></p>
+        <p>Score: <span id="score">0</span></p>
+        <p>Vite: <span id="vite">3</span></p>
+    </div>
+
+    <div id="sezione-avvio">
+        <input type="text" id="input-nome" placeholder="Inserisci il tuo nome">
+        <button id="btn-inizia">Inizia</button>
+    </div>
+
+    <div id="sezione-gioco" class="nascosto">
+        <p id="testo-indizio"></p>
+        <p id="testo-distanza"></p>
+        <button id="btn-sono-qui">Sono qui!</button>
+
+        <div id="area-risposta" class="nascosto">
+            <input type="text" id="input-risposta" placeholder="Inserisci la parola chiave">
+            <button id="btn-invia">Invia</button>
+        </div>
+
+        <p id="feedback"></p>
+
+        <div id="log-eventi"></div>
+    </div>
+
+    <div id="sezione-fine" class="nascosto">
+        <p id="messaggio-fine"></p>
+        <p>Score finale: <span id="score-finale"></span></p>
+        <button id="btn-ricomincia">Ricomincia</button>
+    </div>
+
+    <footer class="footer-principale">
+        <p>&copy; 2026 Daniel Barbuto — Home page</p>
+        <ul>
+            <li><a href="https://github.com/ItzzDanii" class="footer-link">GitHub</a></li>
+            <li><a href="#" class="footer-link">LinkedIn</a></li>
+        </ul>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
