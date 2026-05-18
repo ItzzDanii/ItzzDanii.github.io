@@ -1,16 +1,11 @@
-@import '/home_style.css';
+@import '../main.css';
 
 body {
     max-width: 650px;
     margin: 0 auto;
-    border: 1px solid var(--colore-bordo); 
+    border: 1px solid var(--colore-bordo);
     padding: 2rem;
-    box-shadow: 4px 4px 0px var(--colore-bordo); 
-}
-
-#nav-principale{
-    margin-top: -30px;
-    margin-bottom: 150px;
+    box-shadow: 4px 4px 0px var(--colore-bordo);
 }
 
 h1 {
@@ -18,6 +13,7 @@ h1 {
     text-transform: uppercase;
     border-bottom: 2px solid var(--colore-accento);
     padding-bottom: 0.5rem;
+    margin-top: 8rem;
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -31,7 +27,8 @@ h1 {
     margin-bottom: 2rem;
 }
 
-section, div {
+section,
+div {
     margin-bottom: 1.5rem;
 }
 
@@ -39,8 +36,8 @@ input[type="text"] {
     width: 100%;
     padding: 8px;
     border: 1px solid var(--colore-bordo);
-    background-color: transparent;
-    color: inherit;
+    background-color: white;
+    color: black;
     font-family: inherit;
     margin-top: 10px;
 }
@@ -48,18 +45,20 @@ input[type="text"] {
 button {
     margin-top: 10px;
     padding: 8px 16px;
-    background-color: transparent;
-    color: var(--colore-accento);
-    border: 1px solid var(--colore-accento);
+    background-color: blue;
+    color: white;
+    border: 3px black solid;
+    border-radius: 8px;
     cursor: pointer;
     font-family: inherit;
     font-weight: bold;
     width: 100%;
+    transition: 0.2s;
 }
 
 button:hover {
-    background-color: var(--colore-accento);
-    color: var(--colore-sfondo);
+    background-color: darkblue;
+    scale: 1.1;
 }
 
 #feedback {
@@ -69,19 +68,21 @@ button:hover {
 }
 
 #log-eventi {
-    font-family: monospace; 
+    font-family: monospace;
     font-size: 0.8rem;
     border: 1px solid var(--colore-bordo);
     padding: 10px;
     height: 120px;
     overflow-y: scroll;
-    background: rgba(0,0,0,0.03);
+    background: white;
+    color: black;
 }
 
 .nascosto {
     display: none !important;
 }
 
-.footer-principale{
-    margin-top: 360px;
+.footer-principale {
+    margin-top: 350px;
+    margin-bottom: -50px;
 }

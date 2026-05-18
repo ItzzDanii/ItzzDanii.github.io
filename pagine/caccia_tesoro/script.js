@@ -12,7 +12,7 @@ class Indizio {
     this.testo = testo;
     this.soluzione = soluzione;
     this.punti = punti;
-    this.coordinate = coordinate; // { latitudine, longitudine }
+    this.coordinate = coordinate; // { lat, lon }
     this.risolto = false;
   }
 
@@ -54,8 +54,8 @@ const calcolaDistanza = (lat1, lon1, lat2, lon2) => {
   const Δφ = (lat2 - lat1) * Math.PI / 180;
   const Δλ = (lon2 - lon1) * Math.PI / 180;
   const a = Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
-            Math.cos(φ1) * Math.cos(φ2) *
-            Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
+    Math.cos(φ1) * Math.cos(φ2) *
+    Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   return R * c;
 };
@@ -136,7 +136,7 @@ const gestisciRisposta = () => {
     indizio.risolto = true;
     punteggio = guadagnaPunti(punteggio, indizio.punti);
     logEvento(`Corretto! Guadagnati ${indizio.punti} punti.`);
-    
+
     indizioCorrenteIdx++;
     if (indizioCorrenteIdx < indizi.length) {
       aggiornaInterfaccia();
@@ -160,7 +160,7 @@ const terminaPartita = (messaggio) => {
   document.querySelector('#sezione-fine').classList.remove('nascosto');
   document.querySelector('#messaggio-fine').textContent = messaggio;
   document.querySelector('#punteggio-finale').textContent = punteggio;
-  
+
   const disponibili = calcolaPuntiDisponibili();
   logEvento(`Fine partita. Punti persi per strada: ${disponibili}`);
 };
@@ -170,10 +170,10 @@ const terminaPartita = (messaggio) => {
 document.querySelector('#btn-inizia').addEventListener('click', () => {
   const inputNome = document.querySelector('#input-nome');
   nomeGiocatore = inputNome.value.trim() || 'Esploratore';
-  
+
   document.querySelector('#sezione-avvio').classList.add('nascosto');
   document.querySelector('#sezione-gioco').classList.remove('nascosto');
-  
+
   aggiornaInterfaccia();
   mostraIndizio();
   logEvento("Partita avviata.");
